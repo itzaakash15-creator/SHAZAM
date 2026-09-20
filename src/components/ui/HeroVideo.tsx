@@ -157,8 +157,10 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({ className = "" }) => {
               muted
               loop
               playsInline
+              preload="auto"
+              onLoadedData={() => setHasVideoFile(true)}
               onError={handleVideoError}
-              className="w-full h-full object-cover select-none"
+              className="w-full h-full object-cover select-none block"
             />
           ) : (
             <div className="relative w-full h-full">

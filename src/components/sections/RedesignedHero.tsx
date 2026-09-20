@@ -47,6 +47,17 @@ export const RedesignedHero: React.FC = () => {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         {/* Top Text & Branding Container */}
         <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
+          {/* Official Project Logo Emblem */}
+          <div className="flex justify-center mb-6">
+            <div className="relative px-5 py-2.5 rounded-2xl bg-slate-950/60 border border-cyan-500/30 shadow-[0_0_30px_rgba(6,182,212,0.25)] backdrop-blur-md inline-flex items-center justify-center">
+              <img
+                src="/logo-light.png"
+                alt="Shazam Project Logo"
+                className="h-12 sm:h-16 md:h-20 w-auto object-contain drop-shadow-[0_0_15px_rgba(6,182,212,0.4)]"
+              />
+            </div>
+          </div>
+
           {/* Small Label */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-mono uppercase tracking-widest mb-6 backdrop-blur-md">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>

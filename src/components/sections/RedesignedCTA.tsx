@@ -12,6 +12,15 @@ export const RedesignedCTA: React.FC = () => {
   return (
     <footer id="contact" className="py-20 sm:py-24 px-4 sm:px-6 lg:px-8 bg-[#01040a] border-t border-slate-900 relative">
       <div className="max-w-4xl mx-auto text-center">
+        {/* Official Logo Display */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/logo-light.png"
+            alt="Team Shazam Logo"
+            className="h-12 sm:h-14 w-auto object-contain drop-shadow-[0_0_15px_rgba(6,182,212,0.3)]"
+          />
+        </div>
+
         {/* Main Heading */}
         <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight mb-4">
           Engineering Smarter <br />
@@ -48,9 +57,10 @@ export const RedesignedCTA: React.FC = () => {
 
         {/* Minimal Footer Attribution Line */}
         <div className="pt-8 border-t border-slate-900/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
-          <div>
+          <div className="flex items-center gap-2">
+            <img src="/logo-light.png" alt="Shazam Logo" className="h-5 w-auto object-contain" />
             <span>© {PROJECT_DATA.eventYear} {PROJECT_DATA.teamName}</span>
-            <span className="mx-2 text-slate-600">•</span>
+            <span className="text-slate-600">•</span>
             <span>SIH 2026</span>
           </div>
 

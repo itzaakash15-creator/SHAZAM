@@ -54,21 +54,17 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#hero" className="flex items-center gap-3 group">
-            <div className="relative w-8 h-8 rounded-lg bg-slate-900 border border-cyan-500/40 flex items-center justify-center overflow-hidden shadow-[0_0_12px_rgba(6,182,212,0.25)] group-hover:border-cyan-400 transition-colors">
-              {/* Radar ring icon */}
-              <div className="w-4 h-4 rounded-full border border-cyan-400/70 flex items-center justify-center">
-                <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:scale-125 transition-transform"></div>
-              </div>
+            <div className="relative flex items-center">
+              <img
+                src="/logo-light.png"
+                alt="Team Shazam Logo"
+                className="h-9 sm:h-10 w-auto object-contain drop-shadow-[0_0_12px_rgba(6,182,212,0.35)] group-hover:scale-105 transition-transform"
+              />
             </div>
 
-            <div className="flex items-center gap-2">
-              <span className="font-heading font-extrabold text-base tracking-wider text-white group-hover:text-cyan-300 transition-colors">
-                {PROJECT_DATA.teamName}
-              </span>
-              <span className="hidden sm:inline-block text-[9px] font-mono px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
-                SIH 2026
-              </span>
-            </div>
+            <span className="hidden sm:inline-block text-[9px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-semibold tracking-wider">
+              SIH 2026
+            </span>
           </a>
 
           {/* Desktop Navigation Links */}

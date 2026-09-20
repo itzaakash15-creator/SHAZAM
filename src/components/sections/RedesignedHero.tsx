@@ -1,23 +1,55 @@
 import React from "react";
 import { PROJECT_DATA } from "../../data/project";
 import { HeroVideo } from "../ui/HeroVideo";
-import { ArrowRight, ChevronDown, Radio, Activity, Zap } from "lucide-react";
+import { ArrowRight, ChevronDown, Waves, Compass, Radio } from "lucide-react";
 
 export const RedesignedHero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-[#030712] overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-ocean-depth overflow-hidden"
     >
-      {/* Soft oceanic ambient light behind video */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+      {/* Soft underwater ambient lighting caustics */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none -z-10" />
+      <div className="absolute top-12 left-10 w-96 h-96 bg-blue-900/10 rounded-full blur-[130px] pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto w-full">
+      {/* Subtle floating marine telemetry cues on desktop */}
+      <div className="hidden xl:flex absolute left-8 top-1/3 flex-col gap-6 text-[10px] font-mono text-cyan-500/50 border-l border-cyan-500/20 pl-3 select-none pointer-events-none">
+        <div>
+          <span className="block text-cyan-400/80 font-bold">SUBSEA DEPTH</span>
+          <span>Z = -120m [BATHYPELAGIC]</span>
+        </div>
+        <div>
+          <span className="block text-cyan-400/80 font-bold">SOUND SPEED</span>
+          <span>c = 1502.4 m/s</span>
+        </div>
+        <div>
+          <span className="block text-cyan-400/80 font-bold">SALINITY / EC</span>
+          <span>35 PSU • 48 mS/cm</span>
+        </div>
+      </div>
+
+      <div className="hidden xl:flex absolute right-8 top-1/3 flex-col gap-6 text-[10px] font-mono text-cyan-500/50 border-r border-cyan-500/20 pr-3 select-none pointer-events-none text-right">
+        <div>
+          <span className="block text-cyan-400/80 font-bold">AUV PAYLOAD</span>
+          <span>ADAPTIVE SONAR TX</span>
+        </div>
+        <div>
+          <span className="block text-cyan-400/80 font-bold">CARRIER BAND</span>
+          <span>80 kHz — 500 kHz</span>
+        </div>
+        <div>
+          <span className="block text-cyan-400/80 font-bold">CHIRP MODULATION</span>
+          <span>LFM DIRECT SYNTHESIS</span>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto w-full relative z-10">
         {/* Top Text & Branding Container */}
         <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
           {/* Small Label */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-mono uppercase tracking-widest mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-mono uppercase tracking-widest mb-6 backdrop-blur-md">
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
             <span>{PROJECT_DATA.eventName}</span>
           </div>
 
@@ -48,7 +80,7 @@ export const RedesignedHero: React.FC = () => {
               href="#how-it-works"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-xs sm:text-sm text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-cyan-500/25 hover:border-cyan-400/50 transition-all backdrop-blur-sm font-mono"
             >
-              <span>How It Works</span>
+              <span>System Workflow</span>
             </a>
           </div>
 
@@ -57,7 +89,7 @@ export const RedesignedHero: React.FC = () => {
             {PROJECT_DATA.heroTags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 rounded-full bg-slate-950/80 border border-slate-800 text-[11px] font-mono text-slate-400"
+                className="px-3.5 py-1 rounded-full bg-slate-950/80 border border-cyan-500/20 text-[11px] font-mono text-slate-300 backdrop-blur-sm"
               >
                 {tag}
               </span>
@@ -65,7 +97,7 @@ export const RedesignedHero: React.FC = () => {
           </div>
         </div>
 
-        {/* Centerpiece Hero Video Showcase */}
+        {/* Centerpiece Hero Video Showcase with bottom gradient overlay */}
         <div className="max-w-5xl mx-auto">
           <HeroVideo />
         </div>

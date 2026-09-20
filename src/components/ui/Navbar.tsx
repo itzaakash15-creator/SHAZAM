@@ -10,9 +10,8 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { name: "Problem", href: "#problem" },
   { name: "Solution", href: "#solution" },
-  { name: "How It Works", href: "#how-it-works" },
+  { name: "Workflow", href: "#how-it-works" },
   { name: "Technology", href: "#technology" },
-  { name: "Why It Matters", href: "#why-it-matters" },
   { name: "Team", href: "#team" },
   { name: "Contact", href: "#contact" },
 ];

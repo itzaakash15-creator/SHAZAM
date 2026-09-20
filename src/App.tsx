@@ -3,52 +3,48 @@ import { Navbar } from "./components/ui/Navbar";
 import { ScrollProgress } from "./components/ui/ScrollProgress";
 import { SonarCursor } from "./components/ui/SonarCursor";
 
-// Streamlined 8 Sections
+// Streamlined Sections
 import { RedesignedHero } from "./components/sections/RedesignedHero";
 import { RedesignedProblem } from "./components/sections/RedesignedProblem";
 import { RedesignedSolution } from "./components/sections/RedesignedSolution";
-import { RedesignedWorkflow } from "./components/sections/RedesignedWorkflow";
+import { SystemWorkflowSection } from "./components/sections/SystemWorkflowSection";
 import { RedesignedTech } from "./components/sections/RedesignedTech";
-import { RedesignedWhyItMatters } from "./components/sections/RedesignedWhyItMatters";
 import { RedesignedTeam } from "./components/sections/RedesignedTeam";
 import { RedesignedCTA } from "./components/sections/RedesignedCTA";
 
 export function App() {
   return (
-    <div className="relative min-h-screen bg-[#030712] text-slate-200 overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div className="relative min-h-screen bg-[#020817] text-slate-200 overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-200">
       {/* Top Scroll Progress Indicator */}
       <ScrollProgress />
 
       {/* Desktop Sonar Reticle Cursor */}
       <SonarCursor />
 
-      {/* Sticky Translucent Navbar */}
+      {/* Sticky Ocean-Themed Navbar */}
       <Navbar />
 
-      {/* Streamlined Visual-First Showcase Flow */}
+      {/* Main Showcase Flow */}
       <main>
-        {/* 01: Hero with Video */}
+        {/* 1. Hero with Video & Bottom Gradient Overlay */}
         <RedesignedHero />
 
-        {/* 02: The Problem (3 Minimal Cards) */}
+        {/* 2. The Problem (3 Minimal Cards) */}
         <RedesignedProblem />
 
-        {/* 03: Our Solution (Clean Block Diagram) */}
+        {/* 3. Our Solution (A Sonar Transmitter That Adapts) */}
         <RedesignedSolution />
 
-        {/* 04: How It Works (4 Visual Steps) */}
-        <RedesignedWorkflow />
+        {/* 4. Workflow / Flowchart (10-Step Full Working Flow) */}
+        <SystemWorkflowSection />
 
-        {/* 05: Technology (STM32 Central Architecture) */}
+        {/* 5. Technology (Compact STM32 Architecture) */}
         <RedesignedTech />
 
-        {/* 06: Why It Matters (Visual Comparison) */}
-        <RedesignedWhyItMatters />
-
-        {/* 07: Team & Mentors */}
+        {/* 6. Team & Mentors */}
         <RedesignedTeam />
 
-        {/* 08: Final CTA & Footer */}
+        {/* 7. Footer / CTA */}
         <RedesignedCTA />
       </main>
     </div>

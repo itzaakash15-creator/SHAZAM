@@ -1,30 +1,17 @@
 import React from "react";
 import { Navbar } from "./components/ui/Navbar";
 import { ScrollProgress } from "./components/ui/ScrollProgress";
-import { SectionNavigator } from "./components/ui/SectionNavigator";
 import { SonarCursor } from "./components/ui/SonarCursor";
 
-// Sections
-import { HeroSection } from "./components/sections/HeroSection";
-import { CoreIdeaSection } from "./components/sections/CoreIdeaSection";
-import { ProblemSection } from "./components/sections/ProblemSection";
-import { SolutionSection } from "./components/sections/SolutionSection";
-import { SystemArchitectureSection } from "./components/sections/SystemArchitectureSection";
-import { ControllerSection } from "./components/sections/ControllerSection";
-import { AdaptiveLogicSection } from "./components/sections/AdaptiveLogicSection";
-import { FrequencyConceptSection } from "./components/sections/FrequencyConceptSection";
-import { CognitiveSonarSection } from "./components/sections/CognitiveSonarSection";
-import { HardwareSection } from "./components/sections/HardwareSection";
-import { TechStackSection } from "./components/sections/TechStackSection";
-import { ComparisonSection } from "./components/sections/ComparisonSection";
-import { InnovationsSection } from "./components/sections/InnovationsSection";
-import { ApplicationsSection } from "./components/sections/ApplicationsSection";
-import { DemoSection } from "./components/sections/DemoSection";
-import { TimelineSection } from "./components/sections/TimelineSection";
-import { TeamSection } from "./components/sections/TeamSection";
-import { SihSection } from "./components/sections/SihSection";
-import { ResourcesSection } from "./components/sections/ResourcesSection";
-import { ContactSection } from "./components/sections/ContactSection";
+// Streamlined 8 Sections
+import { RedesignedHero } from "./components/sections/RedesignedHero";
+import { RedesignedProblem } from "./components/sections/RedesignedProblem";
+import { RedesignedSolution } from "./components/sections/RedesignedSolution";
+import { RedesignedWorkflow } from "./components/sections/RedesignedWorkflow";
+import { RedesignedTech } from "./components/sections/RedesignedTech";
+import { RedesignedWhyItMatters } from "./components/sections/RedesignedWhyItMatters";
+import { RedesignedTeam } from "./components/sections/RedesignedTeam";
+import { RedesignedCTA } from "./components/sections/RedesignedCTA";
 
 export function App() {
   return (
@@ -32,76 +19,37 @@ export function App() {
       {/* Top Scroll Progress Indicator */}
       <ScrollProgress />
 
-      {/* Desktop Sonar HUD Cursor */}
+      {/* Desktop Sonar Reticle Cursor */}
       <SonarCursor />
 
-      {/* Main Sticky Navigation */}
+      {/* Sticky Translucent Navbar */}
       <Navbar />
 
-      {/* Desktop Floating HUD Section Index (01, 02, 03...) */}
-      <SectionNavigator />
-
-      {/* Main Showcase Flow */}
+      {/* Streamlined Visual-First Showcase Flow */}
       <main>
-        {/* 01: Hero */}
-        <HeroSection />
+        {/* 01: Hero with Video */}
+        <RedesignedHero />
 
-        {/* 02: Core Idea */}
-        <CoreIdeaSection />
+        {/* 02: The Problem (3 Minimal Cards) */}
+        <RedesignedProblem />
 
-        {/* 03: The Challenge / Problem */}
-        <ProblemSection />
+        {/* 03: Our Solution (Clean Block Diagram) */}
+        <RedesignedSolution />
 
-        {/* 04: Our Solution */}
-        <SolutionSection />
+        {/* 04: How It Works (4 Visual Steps) */}
+        <RedesignedWorkflow />
 
-        {/* 05: System Architecture */}
-        <SystemArchitectureSection />
+        {/* 05: Technology (STM32 Central Architecture) */}
+        <RedesignedTech />
 
-        {/* 06: Embedded Controller (STM32G474RE) */}
-        <ControllerSection />
+        {/* 06: Why It Matters (Visual Comparison) */}
+        <RedesignedWhyItMatters />
 
-        {/* 07: Adaptive Sonar Logic (Interactive Synthesizer) */}
-        <AdaptiveLogicSection />
+        {/* 07: Team & Mentors */}
+        <RedesignedTeam />
 
-        {/* 08: Frequency Concept Spectrum */}
-        <FrequencyConceptSection />
-
-        {/* 09: Cognitive Sonar Feedback Loop */}
-        <CognitiveSonarSection />
-
-        {/* 10: Prototype Hardware */}
-        <HardwareSection />
-
-        {/* 11: Technology Stack */}
-        <TechStackSection />
-
-        {/* 12: Why Adaptive Sonar? (Comparison) */}
-        <ComparisonSection />
-
-        {/* 13: Key Innovations */}
-        <InnovationsSection />
-
-        {/* 14: Potential Application Areas */}
-        <ApplicationsSection />
-
-        {/* 15: System in Action / Demo */}
-        <DemoSection />
-
-        {/* 16: Development & Testing Timeline */}
-        <TimelineSection />
-
-        {/* 17 & 18: Meet Team Shazam & Mentors */}
-        <TeamSection />
-
-        {/* 19: SIH 2026 Submission Showcase */}
-        <SihSection />
-
-        {/* 20: Documentation & Resources */}
-        <ResourcesSection />
-
-        {/* 21: Contact & Footer */}
-        <ContactSection />
+        {/* 08: Final CTA & Footer */}
+        <RedesignedCTA />
       </main>
     </div>
   );

@@ -5,6 +5,7 @@ import { SonarCursor } from "./components/ui/SonarCursor";
 
 // Streamlined Sections
 import { RedesignedHero } from "./components/sections/RedesignedHero";
+import { CaseStudySection } from "./components/sections/CaseStudySection";
 import { RedesignedProblem } from "./components/sections/RedesignedProblem";
 import { RedesignedSolution } from "./components/sections/RedesignedSolution";
 import { SystemWorkflowSection } from "./components/sections/SystemWorkflowSection";
@@ -29,7 +30,10 @@ export function App() {
         {/* 1. Hero with Video & Bottom Gradient Overlay */}
         <RedesignedHero />
 
-        {/* 2. The Problem (3 Minimal Cards) */}
+        {/* 2. Case Study (Problem → Gap → Approach → Impact → Video CTA) */}
+        <CaseStudySection />
+
+        {/* 3. The Problem (3 Minimal Cards) */}
         <RedesignedProblem />
 
         {/* 3. Our Solution (A Sonar Transmitter That Adapts) */}

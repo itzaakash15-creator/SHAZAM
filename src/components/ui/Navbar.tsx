@@ -8,6 +8,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
+  { name: "Case Study", href: "#case-study" },
   { name: "Problem", href: "#problem" },
   { name: "Solution", href: "#solution" },
   { name: "Workflow", href: "#how-it-works" },

@@ -44,7 +44,7 @@ export const RedesignedProblem: React.FC = () => {
             return (
               <div
                 key={card.title}
-                className="p-6 sm:p-7 rounded-2xl bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/50 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 group flex flex-col justify-between"
+                className="shazam-card group p-6 sm:p-7 flex flex-col justify-between"
               >
                 <div>
                   <div className="w-11 h-11 rounded-xl bg-[#E8F7FA] border border-[#2EC4C9]/30 flex items-center justify-center text-[#168AAD] mb-5 group-hover:border-[#2EC4C9]/60 group-hover:scale-105 transition-all">
@@ -58,7 +58,7 @@ export const RedesignedProblem: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#168AAD]">
+                <div className="mt-6 pt-4 border-t border-[rgba(8,51,68,0.08)] flex items-center gap-1.5 text-[10px] font-mono text-[#168AAD]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#168AAD]" />
                   <span>Acoustic Limitation</span>
                 </div>

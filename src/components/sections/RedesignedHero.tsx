@@ -59,21 +59,21 @@ export const RedesignedHero: React.FC = () => {
           </div>
 
           {/* Small Label */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-mono uppercase tracking-widest mb-6 backdrop-blur-md">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#083344]/80 border border-[#2EC4C9]/30 text-[#2EC4C9] text-xs font-mono uppercase tracking-widest mb-6 backdrop-blur-md">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#2EC4C9] animate-pulse"></span>
             <span>{PROJECT_DATA.eventName}</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-heading font-extrabold text-white tracking-tight leading-[1.08] mb-6">
             Adaptive Sonar <br />
-            <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-sky-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#2EC4C9] via-cyan-200 to-[#168AAD] bg-clip-text text-transparent">
               Transmitter for AUVs
             </span>
           </h1>
 
           {/* Short Crisp Supporting Text */}
-          <p className="text-base sm:text-lg text-slate-300 font-light leading-relaxed max-w-2xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-slate-200 font-light leading-relaxed max-w-2xl mx-auto mb-8">
             “{PROJECT_DATA.shortDescription}”
           </p>
 
@@ -81,7 +81,7 @@ export const RedesignedHero: React.FC = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
             <a
               href="#solution"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-300 hover:to-teal-200 shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.5)] transition-all font-mono"
+              className="shazam-btn-primary px-6 py-3 text-xs sm:text-sm shadow-[0_0_25px_rgba(22,138,173,0.35)]"
             >
               <span>Explore Project</span>
               <ArrowRight className="w-4 h-4" />
@@ -89,7 +89,7 @@ export const RedesignedHero: React.FC = () => {
 
             <a
               href="#how-it-works"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-xs sm:text-sm text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-cyan-500/25 hover:border-cyan-400/50 transition-all backdrop-blur-sm font-mono"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-[10px] font-mono font-semibold text-xs sm:text-sm text-white bg-white/5 hover:bg-white/10 border border-[#2EC4C9]/40 hover:border-[#2EC4C9] transition-all backdrop-blur-sm"
             >
               <span>System Workflow</span>
             </a>
@@ -100,7 +100,7 @@ export const RedesignedHero: React.FC = () => {
             {PROJECT_DATA.heroTags.map((tag) => (
               <span
                 key={tag}
-                className="px-3.5 py-1 rounded-full bg-slate-950/80 border border-cyan-500/20 text-[11px] font-mono text-slate-300 backdrop-blur-sm"
+                className="px-3.5 py-1 rounded-full bg-[#083344]/80 border border-[#2EC4C9]/25 text-[11px] font-mono text-cyan-200 backdrop-blur-sm"
               >
                 {tag}
               </span>

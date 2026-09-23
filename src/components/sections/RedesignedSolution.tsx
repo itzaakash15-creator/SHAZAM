@@ -28,7 +28,7 @@ export const RedesignedSolution: React.FC = () => {
         </div>
 
         {/* Clean, Elegant Horizontal / Vertical Block Diagram */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-white border border-[#168AAD]/20 shadow-[0_4px_30px_rgba(22,138,173,0.08)]">
+        <div className="p-6 sm:p-10 rounded-3xl bg-white border border-[rgba(8,51,68,0.10)] shadow-[0_4px_30px_rgba(8,51,68,0.06)]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 relative">
             {pipeline.map((block, idx) => {
               const Icon = block.icon;

@@ -5,24 +5,53 @@
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* Primary Light Ocean Color Palette */
-  --color-ocean-bg-primary: #F4FBFD;
-  --color-ocean-bg-secondary: #E8F7FA;
-  --color-ocean-blue: #168AAD;
-  --color-ocean-cyan: #2EC4C9;
-  --color-ocean-navy: #083344;
-  --color-ocean-dark: #062A3A;
-  --color-ocean-text-primary: #0B2533;
-  --color-ocean-text-secondary: #4B6673;
+  /* Global Ocean Design System Colors */
+  --color-bg-primary: #F4FBFD;
+  --color-bg-secondary: #E8F7FA;
+  --color-surface: #FFFFFF;
 
-  /* Accent Glows */
-  --color-cyan-glow: #22d3ee;
-  --color-cyan-dim: #0891b2;
+  --color-ocean: #168AAD;
+  --color-ocean-dark: #0e6b88;
+  --color-cyan: #2EC4C9;
+  --color-navy: #083344;
+  --color-navy-dark: #062A3A;
+
+  --color-text-primary: #0B2533;
+  --color-text-secondary: #4B6673;
+
+  --color-border-subtle: rgba(8, 51, 68, 0.10);
+  --color-border-hover: rgba(46, 196, 201, 0.40);
+}
+
+:root {
+  /* Global SHAZAM Design Tokens */
+  --bg-primary: #F4FBFD;
+  --bg-secondary: #E8F7FA;
+  --surface: #FFFFFF;
+
+  --ocean: #168AAD;
+  --ocean-dark: #0e6b88;
+  --cyan: #2EC4C9;
+  --navy: #083344;
+  --navy-dark: #062A3A;
+
+  --text-primary: #0B2533;
+  --text-secondary: #4B6673;
+
+  --border: rgba(8, 51, 68, 0.10);
+  --border-hover: rgba(46, 196, 201, 0.45);
+
+  --radius-card: 16px;
+  --radius-btn: 10px;
+
+  --shadow-card: 0 4px 20px -4px rgba(8, 51, 68, 0.08);
+  --shadow-card-hover: 0 12px 32px -6px rgba(22, 138, 173, 0.18);
+  --shadow-btn-glow: 0 0 20px rgba(22, 138, 173, 0.35);
 }
 
 @layer base {
   * {
-    border-color: rgba(22, 138, 173, 0.15);
+    border-color: var(--border);
   }
 
   html {
@@ -31,14 +60,19 @@
 
   body {
     font-family: var(--font-sans);
-    background-color: #F4FBFD;
-    color: #0B2533;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, .font-heading {
     font-family: var(--font-display);
+    color: var(--navy);
     letter-spacing: -0.02em;
+  }
+
+  p {
+    color: var(--text-secondary);
   }
 
   .font-mono {
@@ -46,43 +80,116 @@
   }
 }
 
-/* Subtle ocean gradients & card utilities */
+/* ========================================================= */
+/* UNIFIED CARD SYSTEM                                      */
+/* ========================================================= */
+.shazam-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid rgba(8, 51, 68, 0.10);
+  box-shadow: 0 4px 20px -4px rgba(8, 51, 68, 0.07);
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shazam-card:hover {
+  border-color: rgba(46, 196, 201, 0.45);
+  box-shadow: 0 12px 32px -6px rgba(22, 138, 173, 0.16);
+  transform: translateY(-2px);
+}
+
+/* ========================================================= */
+/* UNIFIED BUTTON SYSTEM                                    */
+/* ========================================================= */
+.shazam-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  background-color: #168AAD;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(22, 138, 173, 0.2);
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.shazam-btn-primary:hover {
+  background-color: #0e6b88;
+  box-shadow: 0 0 22px rgba(22, 138, 173, 0.4);
+  transform: translateY(-1px);
+}
+
+.shazam-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  background-color: transparent;
+  color: #168AAD;
+  border: 1px solid rgba(22, 138, 173, 0.35);
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.shazam-btn-secondary:hover {
+  background-color: #E8F7FA;
+  border-color: #168AAD;
+  color: #0e6b88;
+  transform: translateY(-1px);
+}
+
+/* Subtle ocean badge */
+.shazam-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  background-color: #E8F7FA;
+  border: 1px solid rgba(46, 196, 201, 0.35);
+  color: #168AAD;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Background Flow Presets */
+.bg-ocean-primary {
+  background-color: #F4FBFD;
+}
+
+.bg-ocean-secondary {
+  background-color: #E8F7FA;
+}
+
 .bg-ocean-subtle-gradient {
-  background: linear-gradient(135deg, #E8F7FA 0%, #FFFFFF 50%, #DDF5F7 100%);
+  background: linear-gradient(180deg, #F4FBFD 0%, #E8F7FA 50%, #F4FBFD 100%);
 }
 
-.bg-ocean-card-light {
-  background: #FFFFFF;
-  border: 1px solid rgba(22, 138, 173, 0.15);
-  box-shadow: 0 4px 20px -4px rgba(22, 138, 173, 0.08);
+.bg-ocean-feature-gradient {
+  background: linear-gradient(135deg, #E8F7FA 0%, #FFFFFF 50%, #E0F5F8 100%);
 }
 
-.bg-ocean-card-light:hover {
-  border-color: rgba(46, 196, 201, 0.4);
-  box-shadow: 0 10px 30px -4px rgba(22, 138, 173, 0.15);
-}
-
-/* Deep ocean navy for strategic dark sections */
+/* Strategic Deep Ocean Navy (Hero, Video, Footer) */
 .bg-ocean-depth {
   background: radial-gradient(circle at 50% 0%, #0c3e53 0%, #083344 45%, #062A3A 100%);
 }
 
 .bg-ocean-depth-alt {
   background: linear-gradient(180deg, #062A3A 0%, #083344 50%, #062A3A 100%);
-}
-
-/* Marine cards in dark sections */
-.bg-marine-card {
-  background: rgba(8, 51, 68, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(46, 196, 201, 0.2);
-}
-
-.bg-marine-card:hover {
-  background: rgba(12, 62, 83, 0.85);
-  border-color: rgba(46, 196, 201, 0.45);
-  box-shadow: 0 10px 30px -10px rgba(46, 196, 201, 0.25);
 }
 
 /* Subtle underwater wave flow animation */

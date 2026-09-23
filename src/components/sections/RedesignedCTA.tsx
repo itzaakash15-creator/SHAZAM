@@ -46,7 +46,7 @@ export const RedesignedCTA: React.FC = () => {
                 href={res.url}
                 target={res.url.startsWith("http") ? "_blank" : undefined}
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-semibold bg-[#083344] hover:bg-[#0c445c] text-white border border-[#2EC4C9]/30 hover:border-[#2EC4C9]/70 transition-all shadow-md"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[10px] font-mono text-xs font-semibold bg-[#083344] hover:bg-[#0e445b] text-white border border-[#2EC4C9]/40 hover:border-[#2EC4C9] shadow-sm hover:shadow-[0_0_18px_rgba(46,196,201,0.3)] transition-all"
               >
                 {res.label === "GitHub" && <GithubIcon className="w-4 h-4 text-[#2EC4C9]" />}
                 {res.label === "Documentation" && <FileText className="w-4 h-4 text-[#2EC4C9]" />}

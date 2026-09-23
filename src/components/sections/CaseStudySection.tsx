@@ -78,10 +78,10 @@ export const CaseStudySection: React.FC = () => {
         {/* ========================================================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10">
           {/* 01 — THE CHALLENGE */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/50 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+          <div className="shazam-card group relative p-6 sm:p-7 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-rose-600 font-semibold px-2 py-0.5 rounded bg-rose-50 border border-rose-200">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#083344] font-semibold px-2 py-0.5 rounded bg-[#E8F7FA] border border-[rgba(8,51,68,0.12)]">
                   {blocks.challenge.label}
                 </span>
                 <span className="text-xs font-mono text-[#4B6673] font-bold">
@@ -89,24 +89,24 @@ export const CaseStudySection: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
-                <AlertCircle className="w-4 h-4 text-rose-500 shrink-0" />
+                <AlertCircle className="w-4 h-4 text-[#168AAD] shrink-0" />
                 <span>{blocks.challenge.title}</span>
               </h3>
               <p className="text-xs sm:text-sm text-[#4B6673] font-light leading-relaxed">
                 {blocks.challenge.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#4B6673]">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-500/80" />
+            <div className="mt-6 pt-4 border-t border-[rgba(8,51,68,0.08)] flex items-center gap-1.5 text-[10px] font-mono text-[#4B6673]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#168AAD]" />
               <span>Range vs Resolution conflict</span>
             </div>
           </div>
 
           {/* 02 — THE GAP */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/50 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+          <div className="shazam-card group relative p-6 sm:p-7 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-amber-700 font-semibold px-2 py-0.5 rounded bg-amber-50 border border-amber-200">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#083344] font-semibold px-2 py-0.5 rounded bg-[#E8F7FA] border border-[rgba(8,51,68,0.12)]">
                   {blocks.gap.label}
                 </span>
                 <span className="text-xs font-mono text-[#4B6673] font-bold">
@@ -114,24 +114,24 @@ export const CaseStudySection: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
-                <HelpCircle className="w-4 h-4 text-amber-600 shrink-0" />
+                <HelpCircle className="w-4 h-4 text-[#168AAD] shrink-0" />
                 <span>{blocks.gap.title}</span>
               </h3>
               <p className="text-xs sm:text-sm text-[#4B6673] font-light leading-relaxed">
                 {blocks.gap.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#4B6673]">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80" />
+            <div className="mt-6 pt-4 border-t border-[rgba(8,51,68,0.08)] flex items-center gap-1.5 text-[10px] font-mono text-[#4B6673]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#168AAD]" />
               <span>Static waveforms & blind transmission</span>
             </div>
           </div>
 
           {/* 03 — OUR APPROACH */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#168AAD]/20 hover:border-[#2EC4C9]/60 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+          <div className="shazam-card group relative p-6 sm:p-7 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[#168AAD] font-semibold px-2 py-0.5 rounded bg-[#E8F7FA] border border-[#2EC4C9]/30">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#168AAD] font-semibold px-2 py-0.5 rounded bg-[#E8F7FA] border border-[#2EC4C9]/35">
                   {blocks.approach.label}
                 </span>
                 <span className="text-xs font-mono text-[#4B6673] font-bold">
@@ -146,17 +146,17 @@ export const CaseStudySection: React.FC = () => {
                 {blocks.approach.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#168AAD]">
+            <div className="mt-6 pt-4 border-t border-[rgba(8,51,68,0.08)] flex items-center gap-1.5 text-[10px] font-mono text-[#168AAD]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#168AAD] animate-pulse" />
               <span>CORDIC dynamic LFM chirp core</span>
             </div>
           </div>
 
           {/* 04 — THE IMPACT */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#2EC4C9]/30 shadow-[0_4px_24px_-4px_rgba(46,196,201,0.15)] hover:border-[#2EC4C9]/60 hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.2)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+          <div className="shazam-card group relative p-6 sm:p-7 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-700 font-semibold px-2 py-0.5 rounded bg-emerald-50 border border-emerald-200">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#168AAD] font-semibold px-2 py-0.5 rounded bg-[#E8F7FA] border border-[#2EC4C9]/35">
                   {blocks.impact.label}
                 </span>
                 <span className="text-xs font-mono text-[#4B6673] font-bold">
@@ -164,7 +164,7 @@ export const CaseStudySection: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
-                <TrendingUp className="w-4 h-4 text-emerald-600 shrink-0" />
+                <TrendingUp className="w-4 h-4 text-[#2EC4C9] shrink-0" />
                 <span>{blocks.impact.title}</span>
               </h3>
 
@@ -181,8 +181,8 @@ export const CaseStudySection: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-emerald-600 font-medium">
-              <CheckCircle2 className="w-3.5 h-3.5" />
+            <div className="mt-6 pt-4 border-t border-[rgba(8,51,68,0.08)] flex items-center gap-1.5 text-[10px] font-mono text-[#168AAD] font-medium">
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#2EC4C9]" />
               <span>4 Validated Subsea Outcomes</span>
             </div>
           </div>
@@ -194,13 +194,13 @@ export const CaseStudySection: React.FC = () => {
         <div className="flex justify-center mb-20 sm:mb-24">
           <button
             onClick={() => setModalOpen(true)}
-            className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white hover:bg-[#E8F7FA] border border-[#168AAD]/25 hover:border-[#2EC4C9] text-xs sm:text-sm font-medium text-[#083344] hover:text-[#168AAD] transition-all shadow-[0_2px_12px_rgba(22,138,173,0.08)] group font-mono cursor-pointer"
+            className="shazam-btn-secondary !rounded-full px-6 py-2.5 text-xs sm:text-sm group"
             aria-haspopup="dialog"
             aria-expanded={modalOpen}
           >
             <FileText className="w-4 h-4 text-[#168AAD] group-hover:scale-110 transition-transform" />
             <span>VIEW ORIGINAL CASE STUDY</span>
-            <ChevronRight className="w-3.5 h-3.5 text-[#4B6673] group-hover:text-[#168AAD] group-hover:translate-x-0.5 transition-all" />
+            <ChevronRight className="w-3.5 h-3.5 text-[#168AAD] group-hover:translate-x-0.5 transition-transform" />
           </button>
         </div>
 
@@ -431,7 +431,7 @@ export const CaseStudySection: React.FC = () => {
                   href={CASE_STUDY_PDF_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-sm"
+                  className="shazam-btn-primary !py-2 !px-4"
                 >
                   <Download className="w-3.5 h-3.5" />
                   <span>Download Original PDF</span>

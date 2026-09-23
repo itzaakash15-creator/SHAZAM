@@ -39,7 +39,7 @@ export const RedesignedTech: React.FC = () => {
         </div>
 
         {/* Central Controller Badge & Compact Tags */}
-        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white border border-[#168AAD]/20 text-center mb-10 shadow-[0_4px_30px_rgba(22,138,173,0.08)]">
+        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white border border-[rgba(8,51,68,0.10)] text-center mb-10 shadow-[0_4px_30px_rgba(8,51,68,0.06)]">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F7FA] text-[#168AAD] font-mono text-xs mb-3 border border-[#2EC4C9]/40 font-semibold">
             <Cpu className="w-3.5 h-3.5" />
             <span>CENTRAL CONTROLLER</span>
@@ -57,7 +57,7 @@ export const RedesignedTech: React.FC = () => {
             {mcuTags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 rounded-lg bg-[#E8F7FA] border border-[#168AAD]/20 text-xs font-mono text-[#168AAD] font-semibold"
+                className="px-3 py-1 rounded-lg bg-[#E8F7FA] border border-[rgba(8,51,68,0.10)] text-xs font-mono text-[#168AAD] font-semibold"
               >
                 {tag}
               </span>
@@ -72,7 +72,7 @@ export const RedesignedTech: React.FC = () => {
             return (
               <div
                 key={grp.title}
-                className="p-6 rounded-2xl bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/50 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1"
+                className="shazam-card p-6"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-9 h-9 rounded-xl bg-[#E8F7FA] border border-[#2EC4C9]/30 flex items-center justify-center text-[#168AAD]">

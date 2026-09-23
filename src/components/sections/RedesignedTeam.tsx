@@ -10,9 +10,9 @@ const MemberCard: React.FC<{ member: TeamMember }> = ({ member }) => {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <div className="group relative rounded-2xl p-5 sm:p-6 bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/60 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col text-left">
+    <div className="shazam-card group p-5 sm:p-6 flex flex-col text-left">
       {/* 1. Member Photo Container (Consistent 4:5 Portrait Ratio) */}
-      <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-gradient-to-br from-[#E8F7FA] via-[#F4FBFD] to-[#DDF5F7] border border-[#168AAD]/20 group-hover:border-[#2EC4C9]/60 shadow-[0_4px_14px_rgba(22,138,173,0.08)] group-hover:shadow-[0_8px_24px_rgba(46,196,201,0.22)] transition-all duration-300 mb-4 sm:mb-5">
+      <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-gradient-to-br from-[#E8F7FA] via-[#F4FBFD] to-[#DDF5F7] border border-[rgba(8,51,68,0.12)] group-hover:border-[#2EC4C9]/60 shadow-[0_4px_14px_rgba(8,51,68,0.06)] group-hover:shadow-[0_8px_24px_rgba(22,138,173,0.18)] transition-all duration-300 mb-4 sm:mb-5">
         {!imageError ? (
           <img
             src={member.image}
@@ -24,7 +24,7 @@ const MemberCard: React.FC<{ member: TeamMember }> = ({ member }) => {
         ) : (
           /* Neutral Fallback Placeholder if image fails to load */
           <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center select-none relative">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white border border-[#168AAD]/30 flex items-center justify-center shadow-sm mb-3">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white border border-[rgba(8,51,68,0.15)] flex items-center justify-center shadow-sm mb-3">
               <span className="text-lg sm:text-xl font-mono font-bold text-[#083344]">
                 {member.initials}
               </span>
@@ -45,7 +45,7 @@ const MemberCard: React.FC<{ member: TeamMember }> = ({ member }) => {
       </h3>
 
       {/* 3. Project Role */}
-      <div className="inline-flex items-center self-start px-2.5 py-1 rounded-md bg-[#E8F7FA] border border-[#2EC4C9]/30 text-xs font-mono font-semibold text-[#168AAD] group-hover:bg-[#DDF5F7] group-hover:border-[#2EC4C9]/50 transition-all">
+      <div className="inline-flex items-center self-start px-2.5 py-1 rounded-md bg-[#E8F7FA] border border-[#2EC4C9]/35 text-xs font-mono font-semibold text-[#168AAD] group-hover:bg-[#DDF5F7] group-hover:border-[#2EC4C9]/50 transition-all">
         <span className="truncate">{member.role}</span>
       </div>
     </div>
@@ -105,7 +105,7 @@ export const RedesignedTeam: React.FC = () => {
               {MENTORS.map((mentor) => (
                 <div
                   key={mentor.id}
-                  className="p-5 sm:p-6 rounded-2xl bg-white border border-[#168AAD]/15 shadow-sm hover:shadow-md transition-all flex items-center gap-4 text-left"
+                  className="shazam-card p-5 sm:p-6 flex items-center gap-4 text-left"
                 >
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#E8F7FA] to-[#DDF5F7] border border-[#168AAD]/20 flex items-center justify-center text-[#083344] font-mono font-bold text-base shrink-0">
                     <GraduationCap className="w-6 h-6 text-[#168AAD]" />

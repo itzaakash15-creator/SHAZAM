@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
           <div className="hidden sm:flex items-center gap-3">
             <a
               href="#solution"
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-[#2EC4C9] to-[#168AAD] hover:from-[#2EC4C9]/90 hover:to-[#168AAD]/90 rounded-lg shadow-[0_0_15px_rgba(46,196,201,0.25)] hover:shadow-[0_0_20px_rgba(46,196,201,0.4)] transition-all font-mono"
+              className="shazam-btn-primary"
             >
               <span>Explore Project</span>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -115,7 +115,7 @@ export const Navbar: React.FC = () => {
           <div className="flex lg:hidden items-center gap-2">
             <a
               href="#solution"
-              className="px-3 py-1.5 text-xs font-medium text-white bg-[#168AAD] rounded-md font-mono"
+              className="shazam-btn-primary text-[11px] px-3 py-1.5"
             >
               Explore
             </a>
@@ -123,8 +123,8 @@ export const Navbar: React.FC = () => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={`p-2 rounded-lg border transition-colors ${
                 isScrolled
-                  ? "bg-white border-[#168AAD]/20 text-[#083344] hover:text-[#168AAD]"
-                  : "bg-slate-900/80 border-slate-800 text-slate-200 hover:text-cyan-300"
+                  ? "bg-white border-[rgba(8,51,68,0.12)] text-[#083344] hover:text-[#168AAD]"
+                  : "bg-[#083344]/80 border-[rgba(46,196,201,0.3)] text-slate-200 hover:text-[#2EC4C9]"
               }`}
               aria-label="Toggle Navigation Menu"
             >
@@ -138,8 +138,8 @@ export const Navbar: React.FC = () => {
       {mobileMenuOpen && (
         <div className={`lg:hidden border-b backdrop-blur-xl px-4 pt-3 pb-6 space-y-1 shadow-2xl transition-all ${
           isScrolled
-            ? "bg-[#F4FBFD]/98 border-[#168AAD]/20 text-[#083344]"
-            : "bg-[#062A3A]/98 border-[#2EC4C9]/20 text-slate-200"
+            ? "bg-[#F4FBFD]/98 border-[rgba(8,51,68,0.12)] text-[#083344]"
+            : "bg-[#062A3A]/98 border-[rgba(46,196,201,0.25)] text-slate-200"
         }`}>
           <div className="grid grid-cols-1 gap-1 py-1">
             {NAV_ITEMS.map((item) => (

@@ -99,36 +99,36 @@ export const SystemWorkflowSection: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#062A3A] relative border-t border-[#168AAD]/30 overflow-hidden">
-      {/* Soft underwater lighting glow */}
+    <section id="how-it-works" className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-ocean-subtle-gradient relative border-t border-[rgba(8,51,68,0.10)] overflow-hidden">
+      {/* Soft underwater ambient lighting glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-[#2EC4C9]/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-[11px] font-mono text-[#2EC4C9] uppercase tracking-widest block mb-3 font-semibold">
+          <span className="text-[11px] font-mono text-[#168AAD] uppercase tracking-widest block mb-3 font-semibold">
             SYSTEM WORKFLOW
           </span>
-          <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-[#083344] tracking-tight leading-tight">
             Complete Project Working Flow
           </h2>
-          <p className="mt-3 text-sm text-slate-300 font-light leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base text-[#4B6673] font-light leading-relaxed">
             The end-to-end adaptive transmission pipeline running continuously onboard the Autonomous Underwater Vehicle.
           </p>
         </div>
 
         {/* 10-Step Flowchart Container */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-[#083344]/80 border border-[#2EC4C9]/25 shadow-2xl backdrop-blur-md">
+        <div className="p-6 sm:p-10 rounded-3xl bg-white border border-[rgba(8,51,68,0.10)] shadow-[0_4px_30px_rgba(8,51,68,0.06)]">
           {/* Desktop Serpentine Grid: Row 1 (Steps 1 to 5) & Row 2 (Steps 6 to 10) */}
           <div className="space-y-6">
             
             {/* ROW 1: Steps 1 to 5 (Left to Right) */}
             <div>
               <div className="flex items-center justify-between mb-3 px-2">
-                <span className="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider">
+                <span className="text-[10px] font-mono text-[#168AAD] font-bold uppercase tracking-wider">
                   PHASE 1: SENSING & CHIRP SYNTHESIS
                 </span>
-                <span className="text-[10px] font-mono text-slate-400 hidden sm:inline">
+                <span className="text-[10px] font-mono text-[#4B6673] hidden sm:inline">
                   STEPS 01 → 05
                 </span>
               </div>
@@ -139,34 +139,34 @@ export const SystemWorkflowSection: React.FC = () => {
                   return (
                     <div
                       key={step.number}
-                      className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition-all flex flex-col justify-between group relative"
+                      className="shazam-card p-4 flex flex-col justify-between group relative"
                     >
                       <div>
                         <div className="flex items-center justify-between mb-3">
-                          <span className="font-mono text-xs font-bold text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/30">
+                          <span className="font-mono text-xs font-bold text-[#168AAD] bg-[#E8F7FA] px-2 py-0.5 rounded border border-[#2EC4C9]/35">
                             {step.number}
                           </span>
-                          <span className="text-[9px] font-mono text-slate-400 uppercase">
+                          <span className="text-[9px] font-mono text-[#4B6673] uppercase">
                             {step.tag}
                           </span>
                         </div>
 
-                        <div className="w-8 h-8 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-center text-cyan-400 mb-2.5 group-hover:scale-105 transition-transform">
+                        <div className="w-8 h-8 rounded-xl bg-[#E8F7FA] border border-[#2EC4C9]/30 flex items-center justify-center text-[#168AAD] mb-2.5 group-hover:scale-105 transition-transform">
                           <Icon className="w-4 h-4" />
                         </div>
 
-                        <h4 className="text-xs sm:text-sm font-bold text-white mb-1 leading-snug">
+                        <h4 className="text-xs sm:text-sm font-bold text-[#083344] mb-1 leading-snug group-hover:text-[#168AAD] transition-colors">
                           {step.title}
                         </h4>
 
-                        <p className="text-[11px] text-slate-400 font-light leading-relaxed">
+                        <p className="text-[11px] text-[#4B6673] font-light leading-relaxed">
                           {step.shortDesc}
                         </p>
                       </div>
 
                       {/* Directional indicator between steps on desktop */}
                       {idx < 4 && (
-                        <div className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-cyan-400/50">
+                        <div className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-[#168AAD]/60">
                           <ArrowRight className="w-3.5 h-3.5" />
                         </div>
                       )}
@@ -178,21 +178,21 @@ export const SystemWorkflowSection: React.FC = () => {
 
             {/* Connecting transition badge between row 1 and row 2 */}
             <div className="flex items-center justify-center gap-3 py-1">
-              <div className="h-px w-16 sm:w-32 bg-gradient-to-r from-transparent to-cyan-500/30" />
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-[10px] font-mono text-cyan-300">
+              <div className="h-px w-16 sm:w-32 bg-gradient-to-r from-transparent to-[#168AAD]/25" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F7FA] border border-[#2EC4C9]/40 text-[10px] font-mono text-[#168AAD] font-semibold">
                 <span>STAGE ADVANCE: DAC TO TRANSDUCER EMISSION</span>
-                <ArrowDown className="w-3 h-3 text-cyan-400" />
+                <ArrowDown className="w-3 h-3 text-[#168AAD]" />
               </div>
-              <div className="h-px w-16 sm:w-32 bg-gradient-to-l from-transparent to-cyan-500/30" />
+              <div className="h-px w-16 sm:w-32 bg-gradient-to-l from-transparent to-[#168AAD]/25" />
             </div>
 
             {/* ROW 2: Steps 6 to 10 (Transmission & Closed-Loop Verification) */}
             <div>
               <div className="flex items-center justify-between mb-3 px-2">
-                <span className="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider">
+                <span className="text-[10px] font-mono text-[#168AAD] font-bold uppercase tracking-wider">
                   PHASE 2: EMISSION & COGNITIVE FEEDBACK
                 </span>
-                <span className="text-[10px] font-mono text-slate-400 hidden sm:inline">
+                <span className="text-[10px] font-mono text-[#4B6673] hidden sm:inline">
                   STEPS 06 → 10
                 </span>
               </div>
@@ -207,44 +207,46 @@ export const SystemWorkflowSection: React.FC = () => {
                       key={step.number}
                       className={`p-4 rounded-2xl border transition-all flex flex-col justify-between group relative ${
                         isLast
-                          ? "bg-cyan-950/50 border-cyan-400/60 shadow-[0_0_20px_rgba(6,182,212,0.15)]"
-                          : "bg-slate-900/60 border-slate-800 hover:border-cyan-500/40"
+                          ? "bg-gradient-to-br from-[#E8F7FA] to-[#DDF5F7] border-[#2EC4C9] shadow-[0_4px_20px_rgba(22,138,173,0.15)]"
+                          : "shazam-card"
                       }`}
                     >
                       <div>
                         <div className="flex items-center justify-between mb-3">
                           <span className={`font-mono text-xs font-bold px-2 py-0.5 rounded border ${
                             isLast 
-                              ? "bg-cyan-400 text-slate-950 border-cyan-300"
-                              : "text-cyan-400 bg-cyan-950/80 border-cyan-500/30"
+                              ? "bg-[#168AAD] text-white border-transparent"
+                              : "text-[#168AAD] bg-[#E8F7FA] border-[#2EC4C9]/35"
                           }`}>
                             {step.number}
                           </span>
-                          <span className="text-[9px] font-mono text-slate-400 uppercase">
+                          <span className={`text-[9px] font-mono uppercase ${
+                            isLast ? "text-[#168AAD] font-semibold" : "text-[#4B6673]"
+                          }`}>
                             {step.tag}
                           </span>
                         </div>
 
                         <div className={`w-8 h-8 rounded-xl flex items-center justify-center mb-2.5 transition-transform group-hover:scale-105 ${
                           isLast 
-                            ? "bg-cyan-400 text-slate-950" 
-                            : "bg-slate-950 text-cyan-400 border border-slate-800"
+                            ? "bg-[#168AAD] text-white shadow-xs" 
+                            : "bg-[#E8F7FA] text-[#168AAD] border border-[#2EC4C9]/30"
                         }`}>
                           <Icon className="w-4 h-4" />
                         </div>
 
-                        <h4 className="text-xs sm:text-sm font-bold text-white mb-1 leading-snug">
+                        <h4 className="text-xs sm:text-sm font-bold text-[#083344] mb-1 leading-snug group-hover:text-[#168AAD] transition-colors">
                           {step.title}
                         </h4>
 
-                        <p className="text-[11px] text-slate-400 font-light leading-relaxed">
+                        <p className="text-[11px] text-[#4B6673] font-light leading-relaxed">
                           {step.shortDesc}
                         </p>
                       </div>
 
                       {/* Directional indicator between steps on desktop */}
                       {idx < 4 && (
-                        <div className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-cyan-400/50">
+                        <div className="hidden lg:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-[#168AAD]/60">
                           <ArrowRight className="w-3.5 h-3.5" />
                         </div>
                       )}
@@ -257,15 +259,15 @@ export const SystemWorkflowSection: React.FC = () => {
           </div>
 
           {/* Closed Loop Return Callout Banner */}
-          <div className="mt-8 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono">
-            <div className="flex items-center gap-2 text-cyan-300">
+          <div className="mt-8 pt-6 border-t border-[rgba(8,51,68,0.08)] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono">
+            <div className="flex items-center gap-2 text-[#168AAD]">
               <RotateCw className="w-4 h-4 animate-spin" style={{ animationDuration: "8s" }} />
-              <span className="font-semibold">CLOSED-LOOP FEEDBACK:</span>
-              <span className="text-slate-300 font-sans">
+              <span className="font-semibold text-[#083344]">CLOSED-LOOP FEEDBACK:</span>
+              <span className="text-[#4B6673] font-sans">
                 Echo degradation automatically recalculates chirp carrier and bandwidth for the next ping cycle.
               </span>
             </div>
-            <span className="text-slate-400 shrink-0">
+            <span className="text-[#168AAD] font-semibold shrink-0">
               CONTINUOUS ADAPTIVE CYCLE
             </span>
           </div>

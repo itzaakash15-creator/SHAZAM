@@ -11,6 +11,7 @@ import { RedesignedSolution } from "./components/sections/RedesignedSolution";
 import { SystemWorkflowSection } from "./components/sections/SystemWorkflowSection";
 import { RedesignedTech } from "./components/sections/RedesignedTech";
 import { RedesignedTeam } from "./components/sections/RedesignedTeam";
+import { MentorsSection } from "./components/sections/MentorsSection";
 import { RedesignedCTA } from "./components/sections/RedesignedCTA";
 
 export function App() {
@@ -45,10 +46,13 @@ export function App() {
         {/* 5. Technology (Compact STM32 Architecture) */}
         <RedesignedTech />
 
-        {/* 6. Team & Mentors */}
+        {/* 6. Team */}
         <RedesignedTeam />
 
-        {/* 7. Footer / CTA */}
+        {/* 7. Mentors (Guided by Experience) */}
+        <MentorsSection />
+
+        {/* 8. Footer / CTA */}
         <RedesignedCTA />
       </main>
     </div>

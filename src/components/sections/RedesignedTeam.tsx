@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { TEAM_MEMBERS, MENTORS, TeamMember } from "../../data/team";
-import { GraduationCap } from "lucide-react";
+import { TEAM_MEMBERS, TeamMember } from "../../data/team";
 
 /**
  * Individual Team Member Card
@@ -81,51 +80,11 @@ export const RedesignedTeam: React.FC = () => {
         {/* ========================================================= */}
         {/* 6-MEMBER GRID (Desktop: 3x2, Tablet: 2x3, Mobile: 1x6)    */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {TEAM_MEMBERS.map((member) => (
             <MemberCard key={member.id} member={member} />
           ))}
         </div>
-
-        {/* ========================================================= */}
-        {/* ADVISORY & GUIDANCE (Mentors)                             */}
-        {/* ========================================================= */}
-        {MENTORS.length > 0 && (
-          <div className="pt-12 border-t border-[#168AAD]/15">
-            <div className="text-center mb-8">
-              <span className="text-[11px] font-mono text-[#168AAD] uppercase tracking-widest block font-semibold">
-                ACADEMIC & DEFENCE ADVISORY
-              </span>
-              <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#083344] mt-1">
-                Guided By
-              </h3>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {MENTORS.map((mentor) => (
-                <div
-                  key={mentor.id}
-                  className="shazam-card p-5 sm:p-6 flex items-center gap-4 text-left"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#E8F7FA] to-[#DDF5F7] border border-[#168AAD]/20 flex items-center justify-center text-[#083344] font-mono font-bold text-base shrink-0">
-                    <GraduationCap className="w-6 h-6 text-[#168AAD]" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm sm:text-base font-bold text-[#083344]">
-                      {mentor.name}
-                    </h4>
-                    <p className="text-xs font-mono text-[#168AAD] font-semibold mt-0.5">
-                      {mentor.designation}
-                    </p>
-                    <p className="text-[11px] text-[#4B6673] mt-0.5">
-                      {mentor.department}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

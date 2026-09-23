@@ -13,7 +13,7 @@
  * Replace this URL with your final YouTube video link.
  * When users click the video card or play button, it opens this URL in a new tab.
  */
-export const YOUTUBE_VIDEO_URL = "https://www.youtube.com/watch?v=YOUR_VIDEO_ID";
+export const YOUTUBE_VIDEO_URL = "https://youtu.be/JJ6M1kwA4j8?si=oYl9mAZeOE6x9mkO";
 
 /**
  * Replace this URL with your actual Case Study PDF path or remote link.

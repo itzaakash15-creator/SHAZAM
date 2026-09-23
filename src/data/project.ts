@@ -69,8 +69,8 @@ export const PROJECT_DATA: ProjectInfo = {
   demoVideo: {
     title: "See Team Shazam in Action",
     subtitle: "From environmental sensing to adaptive acoustic transmission.",
-    videoUrl: "https://www.youtube.com/embed/placeholder-video-id",
-    isPlaceholder: true,
+    videoUrl: "https://youtu.be/JJ6M1kwA4j8?si=oYl9mAZeOE6x9mkO",
+    isPlaceholder: false,
     posterImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80",
     duration: "03:45",
   },
@@ -106,7 +106,7 @@ export const PROJECT_DATA: ProjectInfo = {
     },
     {
       label: "Demo Video",
-      url: "#hero",
+      url: "https://youtu.be/JJ6M1kwA4j8?si=oYl9mAZeOE6x9mkO",
       icon: "PlayCircle",
       isAvailable: true,
     },

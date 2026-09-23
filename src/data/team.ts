@@ -21,14 +21,14 @@ export interface TeamMember {
 }
 
 export interface Mentor {
-  id: string;
+  id?: string;
   name: string;
-  designation: string;
-  department: string;
-  organization: string;
-  expertise: string;
-  avatarPlaceholder: string;
-  initials: string;
+  designation?: string;
+  department?: string;
+  organization?: string;
+  expertise?: string;
+  avatarPlaceholder?: string;
+  initials?: string;
   linkedinUrl?: string;
 }
 
@@ -105,29 +105,19 @@ export const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 /**
- * Mentors & Advisors
+ * Mentors
  */
 export const MENTORS: Mentor[] = [
   {
     id: "mentor-01",
-    name: "Faculty Mentor 01",
-    designation: "Professor & Lab Director",
-    department: "Department of Electronics / Ocean Engineering",
-    organization: "[Institution / University Name Placeholder]",
-    expertise: "Underwater Acoustics, Marine Robotics & Signal Processing",
-    avatarPlaceholder: "",
-    initials: "M1",
-    linkedinUrl: "https://linkedin.com",
+    name: "Muthusamy K",
   },
   {
     id: "mentor-02",
-    name: "Technical Advisor 02",
-    designation: "Senior Scientist / Defence Industry Advisor",
-    department: "Subsea Autonomous Systems Division",
-    organization: "[Naval Defence / Maritime Research Organization Placeholder]",
-    expertise: "Subsea Transducer Design, Power Amplification & AUV Systems",
-    avatarPlaceholder: "",
-    initials: "M2",
-    linkedinUrl: "https://linkedin.com",
+    name: "Gajendran Parthasarathi Er",
+  },
+  {
+    id: "mentor-03",
+    name: "Mukuntharaj C",
   },
 ];

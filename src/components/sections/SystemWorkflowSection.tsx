@@ -99,14 +99,14 @@ export const SystemWorkflowSection: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#020817] relative border-t border-cyan-950/60 overflow-hidden">
+    <section id="how-it-works" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#062A3A] relative border-t border-[#168AAD]/30 overflow-hidden">
       {/* Soft underwater lighting glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-cyan-600/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-[#2EC4C9]/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-widest block mb-3 font-semibold">
+          <span className="text-[11px] font-mono text-[#2EC4C9] uppercase tracking-widest block mb-3 font-semibold">
             SYSTEM WORKFLOW
           </span>
           <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight">
@@ -118,7 +118,7 @@ export const SystemWorkflowSection: React.FC = () => {
         </div>
 
         {/* 10-Step Flowchart Container */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-slate-950/60 border border-cyan-500/20 shadow-2xl backdrop-blur-md">
+        <div className="p-6 sm:p-10 rounded-3xl bg-[#083344]/80 border border-[#2EC4C9]/25 shadow-2xl backdrop-blur-md">
           {/* Desktop Serpentine Grid: Row 1 (Steps 1 to 5) & Row 2 (Steps 6 to 10) */}
           <div className="space-y-6">
             

@@ -15,7 +15,7 @@ import { RedesignedCTA } from "./components/sections/RedesignedCTA";
 
 export function App() {
   return (
-    <div className="relative min-h-screen bg-[#020817] text-slate-200 overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div className="relative min-h-screen bg-[#F4FBFD] text-[#0B2533] overflow-x-hidden selection:bg-[#2EC4C9]/30 selection:text-[#083344]">
       {/* Top Scroll Progress Indicator */}
       <ScrollProgress />
 

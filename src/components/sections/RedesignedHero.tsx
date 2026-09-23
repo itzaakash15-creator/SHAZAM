@@ -113,6 +113,9 @@ export const RedesignedHero: React.FC = () => {
           <HeroVideo />
         </div>
       </div>
+
+      {/* Smooth transition gradient into the light ocean Case Study section */}
+      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#F4FBFD] via-[#F4FBFD]/60 to-transparent pointer-events-none z-20" />
     </section>
   );
 };

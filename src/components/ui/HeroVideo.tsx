@@ -175,10 +175,8 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({ className = "" }) => {
             </div>
           )}
 
-          {/* CRITICAL USER REQUIREMENT:
-              Gradient overlay at the bottom of the video so it blends nicely into the next section.
-              Starts transparent above, becomes darker toward the bottom, blends into page background. */}
-          <div className="absolute inset-x-0 bottom-0 h-28 sm:h-44 bg-gradient-to-t from-[#020817] via-[#020817]/75 to-transparent pointer-events-none z-10" />
+          {/* Gradient overlay at the bottom of the video blending into deep ocean navy */}
+          <div className="absolute inset-x-0 bottom-0 h-28 sm:h-44 bg-gradient-to-t from-[#062A3A] via-[#062A3A]/75 to-transparent pointer-events-none z-10" />
 
           {/* Clean, unobtrusive Mute / Unmute Button */}
           {hasVideoFile && (

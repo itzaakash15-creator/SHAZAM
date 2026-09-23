@@ -52,23 +52,23 @@ export const CaseStudySection: React.FC = () => {
   return (
     <section
       id="case-study"
-      className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#020617] border-t border-slate-900/90 overflow-hidden"
+      className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#F4FBFD] border-t border-[#168AAD]/15 overflow-hidden"
     >
       {/* Ambient subsea lighting gradient */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none -z-10" />
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#2EC4C9]/10 rounded-full blur-[140px] pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto">
         {/* ========================================================= */}
         {/* 1. SECTION HEADER                                         */}
         {/* ========================================================= */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
-          <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-widest block mb-3 font-semibold">
+          <span className="text-[11px] font-mono text-[#168AAD] uppercase tracking-widest block mb-3 font-semibold">
             {header.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-[#083344] tracking-tight leading-tight">
             {header.heading}
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-slate-400 font-light leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-[#4B6673] font-light leading-relaxed">
             {header.subheading}
           </p>
         </div>
@@ -78,110 +78,110 @@ export const CaseStudySection: React.FC = () => {
         {/* ========================================================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10">
           {/* 01 — THE CHALLENGE */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-slate-950/60 border border-slate-800/80 hover:border-cyan-500/30 transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/50 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-rose-400/90 font-semibold px-2 py-0.5 rounded bg-rose-950/40 border border-rose-500/20">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-rose-600 font-semibold px-2 py-0.5 rounded bg-rose-50 border border-rose-200">
                   {blocks.challenge.label}
                 </span>
-                <span className="text-xs font-mono text-slate-400/80 font-bold">
+                <span className="text-xs font-mono text-[#4B6673] font-bold">
                   {blocks.challenge.number}
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors flex items-center gap-2">
-                <AlertCircle className="w-4 h-4 text-rose-400 shrink-0" />
+              <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 text-rose-500 shrink-0" />
                 <span>{blocks.challenge.title}</span>
               </h3>
-              <p className="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4B6673] font-light leading-relaxed">
                 {blocks.challenge.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-slate-900/80 flex items-center gap-1.5 text-[10px] font-mono text-slate-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-400/70" />
+            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#4B6673]">
+              <span className="w-1.5 h-1.5 rounded-full bg-rose-500/80" />
               <span>Range vs Resolution conflict</span>
             </div>
           </div>
 
           {/* 02 — THE GAP */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-slate-950/60 border border-slate-800/80 hover:border-cyan-500/30 transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#168AAD]/15 hover:border-[#2EC4C9]/50 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-amber-400/90 font-semibold px-2 py-0.5 rounded bg-amber-950/40 border border-amber-500/20">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-amber-700 font-semibold px-2 py-0.5 rounded bg-amber-50 border border-amber-200">
                   {blocks.gap.label}
                 </span>
-                <span className="text-xs font-mono text-slate-400/80 font-bold">
+                <span className="text-xs font-mono text-[#4B6673] font-bold">
                   {blocks.gap.number}
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors flex items-center gap-2">
-                <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+              <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
+                <HelpCircle className="w-4 h-4 text-amber-600 shrink-0" />
                 <span>{blocks.gap.title}</span>
               </h3>
-              <p className="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4B6673] font-light leading-relaxed">
                 {blocks.gap.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-slate-900/80 flex items-center gap-1.5 text-[10px] font-mono text-slate-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-400/70" />
+            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#4B6673]">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80" />
               <span>Static waveforms & blind transmission</span>
             </div>
           </div>
 
           {/* 03 — OUR APPROACH */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-slate-950/60 border border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#168AAD]/20 hover:border-[#2EC4C9]/60 shadow-[0_4px_20px_-4px_rgba(22,138,173,0.08)] hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-cyan-300 font-semibold px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-500/30">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#168AAD] font-semibold px-2 py-0.5 rounded bg-[#E8F7FA] border border-[#2EC4C9]/30">
                   {blocks.approach.label}
                 </span>
-                <span className="text-xs font-mono text-slate-400/80 font-bold">
+                <span className="text-xs font-mono text-[#4B6673] font-bold">
                   {blocks.approach.number}
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors flex items-center gap-2">
-                <Cpu className="w-4 h-4 text-cyan-400 shrink-0" />
+              <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
+                <Cpu className="w-4 h-4 text-[#168AAD] shrink-0" />
                 <span>{blocks.approach.title}</span>
               </h3>
-              <p className="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4B6673] font-light leading-relaxed">
                 {blocks.approach.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-slate-900/80 flex items-center gap-1.5 text-[10px] font-mono text-cyan-400/80">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-[#168AAD]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#168AAD] animate-pulse" />
               <span>CORDIC dynamic LFM chirp core</span>
             </div>
           </div>
 
           {/* 04 — THE IMPACT */}
-          <div className="group relative rounded-2xl p-6 sm:p-7 bg-slate-950/80 border border-cyan-500/30 shadow-[0_0_20px_rgba(6,182,212,0.1)] hover:border-cyan-400/60 transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative rounded-2xl p-6 sm:p-7 bg-white border border-[#2EC4C9]/30 shadow-[0_4px_24px_-4px_rgba(46,196,201,0.15)] hover:border-[#2EC4C9]/60 hover:shadow-[0_12px_32px_-6px_rgba(22,138,173,0.2)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-300 font-semibold px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-700 font-semibold px-2 py-0.5 rounded bg-emerald-50 border border-emerald-200">
                   {blocks.impact.label}
                 </span>
-                <span className="text-xs font-mono text-slate-400/80 font-bold">
+                <span className="text-xs font-mono text-[#4B6673] font-bold">
                   {blocks.impact.number}
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors flex items-center gap-2">
-                <TrendingUp className="w-4 h-4 text-emerald-400 shrink-0" />
+              <h3 className="text-lg font-bold text-[#083344] mb-3 group-hover:text-[#168AAD] transition-colors flex items-center gap-2">
+                <TrendingUp className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>{blocks.impact.title}</span>
               </h3>
 
               <div className="space-y-2.5">
                 {blocks.impact.highlights?.map((item) => (
                   <div key={item.tag} className="text-xs">
-                    <span className="font-mono text-[10px] font-bold text-cyan-300 block tracking-wider">
+                    <span className="font-mono text-[10px] font-bold text-[#168AAD] block tracking-wider">
                       {item.tag}
                     </span>
-                    <span className="text-slate-400 font-light text-[11px] leading-tight block">
+                    <span className="text-[#4B6673] font-light text-[11px] leading-tight block">
                       {item.detail}
                     </span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-1.5 text-[10px] font-mono text-emerald-400">
+            <div className="mt-6 pt-4 border-t border-[#168AAD]/10 flex items-center gap-1.5 text-[10px] font-mono text-emerald-600 font-medium">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>4 Validated Subsea Outcomes</span>
             </div>
@@ -194,13 +194,13 @@ export const CaseStudySection: React.FC = () => {
         <div className="flex justify-center mb-20 sm:mb-24">
           <button
             onClick={() => setModalOpen(true)}
-            className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800/90 border border-slate-700/80 hover:border-cyan-500/40 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition-all shadow-sm group font-mono cursor-pointer"
+            className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white hover:bg-[#E8F7FA] border border-[#168AAD]/25 hover:border-[#2EC4C9] text-xs sm:text-sm font-medium text-[#083344] hover:text-[#168AAD] transition-all shadow-[0_2px_12px_rgba(22,138,173,0.08)] group font-mono cursor-pointer"
             aria-haspopup="dialog"
             aria-expanded={modalOpen}
           >
-            <FileText className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
+            <FileText className="w-4 h-4 text-[#168AAD] group-hover:scale-110 transition-transform" />
             <span>VIEW ORIGINAL CASE STUDY</span>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-0.5 transition-all" />
+            <ChevronRight className="w-3.5 h-3.5 text-[#4B6673] group-hover:text-[#168AAD] group-hover:translate-x-0.5 transition-all" />
           </button>
         </div>
 
@@ -210,13 +210,13 @@ export const CaseStudySection: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           {/* Video CTA Header */}
           <div className="text-center max-w-xl mx-auto mb-8 sm:mb-10">
-            <span className="text-[10px] font-mono text-cyan-400 uppercase tracking-widest block mb-2 font-semibold">
+            <span className="text-[10px] font-mono text-[#168AAD] uppercase tracking-widest block mb-2 font-semibold">
               {videoCta.videoLabel}
             </span>
-            <h3 className="text-2xl sm:text-4xl font-heading font-extrabold text-white tracking-tight">
+            <h3 className="text-2xl sm:text-4xl font-heading font-extrabold text-[#083344] tracking-tight">
               {videoCta.heading}
             </h3>
-            <p className="mt-2 text-xs sm:text-sm text-slate-400 font-light leading-relaxed">
+            <p className="mt-2 text-xs sm:text-sm text-[#4B6673] font-light leading-relaxed">
               {videoCta.subheading}
             </p>
           </div>
@@ -226,7 +226,7 @@ export const CaseStudySection: React.FC = () => {
             href={YOUTUBE_VIDEO_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block relative w-full aspect-video rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 bg-[#020817] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_50px_-10px_rgba(6,182,212,0.25)] transition-all duration-500 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+            className="group block relative w-full aspect-video rounded-2xl sm:rounded-3xl overflow-hidden border border-[#083344] hover:border-[#2EC4C9]/70 bg-[#062A3A] shadow-[0_15px_50px_-10px_rgba(8,51,68,0.35)] hover:shadow-[0_20px_60px_-10px_rgba(46,196,201,0.35)] transition-all duration-500 hover:-translate-y-1.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#2EC4C9]/50"
             aria-label="Watch Team Shazam Full Project Video on YouTube (opens in a new tab)"
           >
             {/* Cinematic Poster Thumbnail */}
